@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My interests</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnAlbums").click(function (e) {
+                e.preventDefault();
+                $('#artists').hide(1000);
+                $('#albums').show(1000);
+                $('.musicBtn').removeClass("disabled",1000);
+                $('#btnAlbums').addClass("disabled",1000);
+            });
+            $("#btnArtists").click(function (e) {
+                e.preventDefault();
+                $('#albums').hide(1000);
+                $('#artists').show(1000);
+                $('.musicBtn').removeClass("disabled",1000);
+                $('#btnArtists').addClass("disabled",1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="content">
+        <header>
+            <h1><em>Filip Znaor</em></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="skills.html">My skills</a></li>
+                <li class="active">My interests</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article id="music">
+                <h2>Music</h2>
+                <p>When I'm not at college or somewhere with my friends, I'm most likely to be doing something while listening to music. I've liked
+                    listening to music pretty much since I was born, but I started to pay more interest and seek to discover new music more intensely
+                    in the last couple of years. I can't specify a single favourite genre, but some of my favourites are alternative rock, post-rock, indie rock,
+                    post-punk, ambient and chamber pop. If you want to get a better look at my music taste, you can visit <a href="https://www.last.fm/user/fznaor">
+                    my Last.fm profile</a> or <a href="https://rateyourmusic.com/~skybluefz">my RateYourMusic profile</a>. You can see some of my favourite artists
+                    and albums below.
+                </p>
+                <div id="buttons">
+                    <button class="disabled musicBtn" id="btnArtists">Artists</button>
+                    <button class="musicBtn" id="btnAlbums">Albums</button>
+                </div>
+                <div id="artists" class="musicGrid">
+                    <ul class="musicList" id="artistList">
+                        <li>
+                            <img src="../images/radiohead.jpg" alt="Radiohead">
+                            <p>Radiohead</p>
+                        </li>
+                        <li>
+                            <img src="../images/sufjan.jpg" alt="Sufjan Stevens">
+                            <p>Sufjan Stevens</p>
+                        </li>
+                        <li>
+                            <img src="../images/gizz.jpeg" alt="King Gizzard & the Lizard Wizard">
+                            <p>King Gizzard & the Lizard Wizard</p>
+                        </li>
+                        <li>
+                            <img src="../images/arcadefire.jpg" alt="Arcade Fire">
+                            <p>Arcade Fire</p>
+                        </li>
+                        <li>
+                            <img src="../images/gybe.jpg" alt="Godspeed You! Black Emperor">
+                            <p>Godspeed You! Black Emperor</p>
+                        </li>
+                        <li>
+                            <img src="../images/grizzlybear.jpg" alt="Grizzly Bear">
+                            <p>Grizzly Bear</p>
+                        </li>
+                        <li>
+                            <img src="../images/swans.jpg" alt="Swans">
+                            <p>Swans</p>
+                        </li>
+                        <li>
+                            <img src="../images/joanna.jpg" alt="Joanna Newsom">
+                            <p>Joanna Newsom</p>
+                        </li>
+                        <li>
+                            <img src="../images/bowie.jpg" alt="David Bowie">
+                            <p>David Bowie</p>
+                        </li>
+                        <li>
+                            <img src="../images/sigurros.jpg" alt="Sigur Rós">
+                            <p>Sigur Rós</p>
+                        </li>
+                        <li>
+                            <img src="../images/aphex.jpg" alt="Aphex Twin">
+                            <p>Aphex Twin</p>
+                        </li>
+                        <li>
+                            <img src="../images/lcd.jpg" alt="LCD Soundsystem">
+                            <p>LCD Soundsystem</p>
+                        </li>
+                        <li>
+                            <img src="../images/talkingheads.png" alt="Talking Heads">
+                            <p>Talking Heads</p>
+                        </li>
+                        <li>
+                            <img src="../images/pixies.jpg" alt="Pixies">
+                            <p>Pixies</p>
+                        </li>
+                        <li>
+                            <img src="../images/hecker.jpg" alt="Tim Hecker">
+                            <p>Tim Hecker</p>
+                        </li>
+                        <li>
+                            <img src="../images/fishmans.jpg" alt="Fishmans">
+                            <p>Fishmans</p>
+                        </li>
+                    </ul class="musicList">
+                </div>
+                <div id="albums" class="musicGrid">
+                    <ul class="musicList" id="albumList">
+                        <li>
+                            <img src="../images/lysf.jpg" alt="Lift Yr. Skinny Fists Like Antennas to Heaven!">
+                            <p><abbr title="Godspeed You! Black Emperor">GY!BE</abbr><br><em>Lift Yr. Skinny Fists Like Antennas to Heaven!</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/fsharp.jpg"alt="F sharp A sharp Infinity">
+                            <p><abbr title="Godspeed You! Black Emperor">GY!BE</abbr><br><em>F♯ A♯ ∞</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/kida.jpg" alt="Kid A">
+                            <p>Radiohead<br><em>Kid A</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/long season.jpg" alt="Long Season">
+                            <p>Fishmans<br><em>Long Season</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/okc.jpg" alt="OK Computer">
+                            <p>Radiohead<br><em>OK Computer</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/ys.jpg" alt="Ys">
+                            <p>Joanna Newsom<br><em>Ys</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/brightlights.png" alt="Turn on the Bright Lights">
+                            <p>Interpol<br><em>Turn on the Bright Lights</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/leaves.jpg" alt="Leaves Turn Inside You">
+                            <p>Unwound<br><em>Leaves Turn Inside You</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/agaetis.jpg" alt="Agaetis byrjun">
+                            <p>Sigur Rós<br><em>Ágætis Byrjun</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/spiderland.jpg" alt="Spiderland">
+                            <p>Slint<br><em>Spiderland</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/unknown.jpg" alt="Unknown Pleasures">
+                            <p>Joy Division<br><em>Unknown Pleasures</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/mezzanine.jpg" alt="Mezzanine">
+                            <p>Massive Attack<br><em>Mezzanine</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/untitledsigur.jpg" alt="()">
+                            <p>Sigur Rós<br><em>()</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/carrie.jpg" alt="Carrie and Lowell">
+                            <p>Sufjan Stevens<br><em>Carrie and Lowell</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/remain.jpg" alt="Remain in Light">
+                            <p>Talking Heads<br><em>Remain in Light</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/funeral.jpg" alt="Funeral">
+                            <p>Arcade Fire<br><em>Funeral</em></p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <section class="interests">
+                <article>
+                    <h2>Sports</h2>
+                    <p>
+                        I'm a big sports fan. I almost exclusively follow individual sports as I find them more interesting. My favourite
+                        sports are Formula One, tennis, alpine skiing, biathlon, cycling, MotoGP and motorsports in general. I don't have
+                        outright favourites in each of them, but you can see some of my (not necessarily active) favourites below.
+                    </p>
+                    <ul class="interestList" id="sportsList">
+                        <li>
+                            <img src="../images/alonso.jpg" alt="Fernando Alonso">
+                            <p>Fernando Alonso<br><em>Formula One</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/federer.jpg" alt="Roger Federer">
+                            <p>Roger Federer<br><em>Tennis</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/cilic.jpg" alt="Marin Čilić">
+                            <p>Marin Čilić<br><em>Tennis</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/kerber.jpg" alt="Angelique Kerber">
+                            <p>Angelique Kerber<br><em>Tennis</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/svindal.jpg" alt="Aksel Lund Svindal">
+                            <p>Aksel Lund Svindal<br><em>Alpine skiing</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/gut.jpg" alt="Lara Gut-Behrami">
+                            <p>Lara Gut-Behrami<br><em>Alpine skiing</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/kaisa.jpg" alt="Kaisa Mäkäräinen">
+                            <p>Kaisa Mäkäräinen<br><em>Biathlon</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/pinot.jpg" alt="Thibaut Pinot">
+                            <p>Thibaut Pinot<br><em>Cycling</em></p>
+                        </li>
+                        <li>
+                            <img src="../images/dovi.jpg" alt="Andrea Dovizioso">
+                            <p>Andrea Dovizioso<br><em>MotoGP</em></p>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>TV shows</h2>
+                    <p>
+                        In my free time I also like to watch TV shows. I don't watch them regularly, but every once in a while I'll
+                        binge watch a couple of shows and then take a break for a month or two. I don't have any specific favourite genres. 
+                        You can see some of my favourite shows below.
+                    </p>
+                    <ul class="interestList" id="showsList">
+                        <li>
+                            <img src="../images/brbad.jpg" alt="Breaking Bad">
+                            <p>Breaking Bad</p>
+                        </li>
+                        <li>
+                            <img src="../images/fargo.jpg" alt="Fargo">
+                            <p>Fargo</p>
+                        </li>
+                        <li>
+                            <img src="../images/got.jpg" alt="Game of Thrones">
+                            <p>Game of Thrones</p>
+                        </li>
+                        <li>
+                            <img src="../images/arrested.jpg" alt="Arrested Development">
+                            <p>Arrested Development</p>
+                        </li>
+                        <li>
+                            <img src="../images/cye.jpg" alt="Curb Your Enthusiasm">
+                            <p>Curb Your Enthusiasm</p>
+                        </li>
+                        <li>
+                            <img src="../images/drwho.jpg" alt="Doctor Who">
+                            <p>Doctor Who</p>
+                        </li>
+                        <li>
+                            <img src="../images/blackmirror.jpg" alt="Black Mirror">
+                            <p>Black Mirror</p>
+                        </li>
+                        <li>
+                            <img src="../images/iasip.jpg" alt="It's Always Sunny in Philadelphia">
+                            <p>It's Always Sunny in Philadelphia</p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <article id="other">
+                <h2>Other</h2>
+                <p>
+                    I also like watching movies, although not as much as TV shows, so that's why they didn't get their own article. During
+                    the summer months, I enjoy frequently riding my bike across Osijek and its neighbouring places. As far as other physical
+                    activities go, I am too lazy for them. I trained swimming for 3 years when I was younger, followed by short stints of training
+                    waterpolo and tennis.
+                </p>
+                <p>
+                    I know how to solve the Rubik's cube. It's been a while since I've practiced solving it, but my personal best is a decent 39 seconds.
+                    I also know how to solve the 4x4 and 5x5 versions, but I'm not that quick in solving them.
+                </p>
+                <p>
+                    I was a member of the <a href="https://sites.google.com/site/javorosijek/home">Javor Scout Club</a>
+                    for 6 years. I loved being a scout because it gave me an opportunity to travel around Croatia
+                    (and sometimes even abroad) and meet new people. I was a leader of a troop for a year, but obligations in school and a general lack
+                    of motivation forced me to quit.
+                </p>
+                <p>
+                    For the last couple of years, I have been going to pub quizzes regularly. Having loved learning trivia from a young age, it's not
+                    surprising that I've come to love them. My best categories are geography, science and (some) sports. The two teams I regularly play
+                    in are called <em>Nestašni karcinomi</em> and <em>Osmijeh Franje Tuđmana</em>. We have managed to win in 6 different pubs, but our
+                    most successful days seem to be behind us. I also like participating in individual quizzes such as the World Quizzing Championships.
+                    My biggest accomplishment is a 1<sup>st</sup> place in Osijek among quizzers younger than 23 years.
+                </p>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <p>Created by Filip Znaor, 2020</p>
+        <a href="https://www.facebook.com/filip.znaor.7"><img src="../images/fb_ico.png" alt="Facebook"></a>
+    </footer>
+    
+</body>
+
+</html>
