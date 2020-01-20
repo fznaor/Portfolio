@@ -135,7 +135,7 @@ table.infoTable tr:nth-child(even){
 }
 
 table.infoTable tr:nth-child(odd), table.infoTable tr.dualRow{
-  background-color: #7cc0d1;
+  background-color: #cececeb6;
 }
 
 table.infoTable tr:last-child{
@@ -163,18 +163,21 @@ article p{
 footer{
   background-color: #26a5be;
   border-radius: 5px;
+  height: 60px;
   padding: 5px;
   margin: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer p{
-  display: inline-block;
-  margin: 15px;
+  margin: auto 10px;
 }
 
 footer a{
-  float:right;
-  margin: auto 5px;
+  height: 50px;
+  width: 50px;
+  margin: auto 10px;
 }
 
 footer img{
